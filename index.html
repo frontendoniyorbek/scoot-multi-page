@@ -13,11 +13,67 @@
 <link rel="stylesheet" href="./css/main.css">
 
 <body>
-    <div class="container">
-        <h1>Salom</h1>
-        <a class="btn" href="#">Button</a>
-    </div>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="site-logo" href="#">
+                <img src="./images/svg/scoot.svg" alt="site-logo">
+            </a>
+            <nav class="sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="about.html">About</a>
+                    </li>
 
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="location.html">Location</a>
+                    </li>
+
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="careers.html">Careers</a>
+                    </li>
+                </ul>
+                <a class="btn sitenav__btn" href="#">Get Scootin</a>
+            </nav>
+            <a class="btn site-header__link" href="#">Get Scootin</a>
+
+            <div class="toggle-btn">
+                <img class="toggle-btn__image" src="./images/svg/hamburger-icon.svg" alt="hamburger-icon" width="20"
+                    height="16">
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="hero">
+            <div class="hero__wrapper">
+                <div class="container">
+                    <div class="hero__info">
+                        <h1 class="hero__info--title">Scooter sharing made simple</h1>
+                        <div class="hero__info--inner">
+                            <p class="hero__info--text">Scoot takes the hassle out of urban mobility. Our bikes are
+                                placed
+                                in
+                                convenient locations in each of our cities. Use our app to locate the nearest bike,
+                                unlock
+                                it
+                                with a tap, and you’re away!
+                            </p>
+                            <a class="btn hero__info--inner_link" href="#">Get Scootin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="./images/svg/line.svg" alt="line" width="203">
+                </div>
+
+                <div class="hero__img--two">
+                    <img src="./images/svg/arrow.svg" alt="line" width="203">
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- JS -->
     <script src="./js/main.js"></script>
 </body>

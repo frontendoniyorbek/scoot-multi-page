@@ -1,0 +1,78 @@
+.sitenav {
+  margin-right: auto;
+
+  @include responsive(m-tablet) {
+    margin-right: 0;
+  }
+
+  @include responsive(phone) {
+    position: fixed;
+    top: 6.4rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 9999;
+    max-width: 256px;
+    width: 100%;
+    background-color: #333a44;
+    padding: 6.4rem 3.2rem 0 3.2rem;
+    color: $light-grey;
+    opacity: 1;
+  }
+
+  &__list {
+    display: flex;
+    word-spacing: nowrap;
+
+    @include responsive(phone) {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 3.2rem;
+
+    @include responsive(phone) {
+      margin-right: 0;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__link {
+    color: $dim-grey;
+    font-weight: 700;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $yellow-color;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    @include responsive(phone) {
+      color: $light-grey;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 1.39;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include responsive(phone) {
+      display: block;
+      margin-top: 33.9rem;
+      margin-bottom: 2.4rem;
+      padding: 1.4rem 4.4rem;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

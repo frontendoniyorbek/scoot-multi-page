@@ -1,0 +1,87 @@
+.hero {
+  padding-bottom: 16rem;
+
+  @include responsive(tablet) {
+    margin-bottom: 12.2rem;
+  }
+
+  @include responsive(phone) {
+    margin-bottom: 12rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/jpg/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__img {
+    position: absolute;
+    top: 35.3rem;
+    left: 0;
+
+    @include responsive(tablet) {
+      display: none;
+    }
+  }
+
+  &__img--two {
+    position: absolute;
+    top: 35.5rem;
+    right: 28.9rem;
+
+    @include responsive(tablet) {
+      left: 0;
+      right: 44.9rem;
+      top: 47.3rem;
+    }
+
+    @include responsive(phone) {
+      left: 0;
+      right: 33.5rem;
+      top: 47.8rem;
+    }
+  }
+
+  &__info {
+    padding-top: 15.3rem;
+    padding-bottom: 15.3rem;
+    max-width: 500px;
+    width: 100%;
+
+    @include responsive(tablet) {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      max-width: 573px;
+    }
+  }
+
+  &__info--title {
+    color: $white-color;
+    margin-bottom: 4rem;
+  }
+
+  &__info--inner {
+    padding-left: 9.5rem;
+
+    @include responsive(tablet) {
+      padding-left: 0;
+    }
+  }
+
+  &__info--text {
+    color: $white-color;
+    margin-bottom: 4rem;
+  }
+
+  &__info--inner_link {
+    padding: 1.4rem 3.9rem;
+    color: $white-color;
+  }
+}

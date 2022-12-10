@@ -5,6 +5,12 @@
     }
   }
 
+  @if $breakpoint == m-tablet {
+    @media screen and (max-width: 620px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     @media screen and (max-width: 375px) {
       @content;

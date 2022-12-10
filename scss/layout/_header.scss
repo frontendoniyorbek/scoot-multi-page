@@ -1,0 +1,84 @@
+.site-header {
+  padding: 2.2rem 0;
+  @include responsive(phone) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: $white-color;
+    z-index: 10;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @include responsive(m-tablet) {
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    padding: 1.4rem 3.9rem;
+    @include responsive(m-tablet) {
+      display: none;
+    }
+  }
+}
+
+.site-logo {
+  margin-right: 5.8rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @include responsive(m-tablet) {
+    margin-right: 0;
+  }
+
+  @include responsive(phone) {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.site-logo img {
+  width: 108px;
+  height: 29px;
+  object-fit: contain;
+
+  @include responsive(phone) {
+    width: 76px;
+    height: 20px;
+    text-align: center;
+  }
+}
+
+.toggle-btn {
+  display: none;
+
+  @include responsive(phone) {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 2.4rem;
+    left: 2.4rem;
+    background-color: transparent;
+  }
+
+  &__image {
+    width: 15px;
+    height: 15px;
+    display: block;
+  }
+}
+
+.hidden {
+  display: none;
+}
