@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: {
+    family: $main-font;
+    size: 1.5rem;
+    weight: 400;
+  }
+  color: $dim-grey;
+  line-height: 1.67;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: $dark-navy;
+  font-family: $secondary-font;
+  font-weight: 700;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 1;
+  letter-spacing: -2.14286px;
+}
+
+h3 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -1.78571px;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.17;
+  letter-spacing: -1.07143px;
+}
