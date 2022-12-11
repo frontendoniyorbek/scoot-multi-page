@@ -1,0 +1,88 @@
+.faq {
+  padding-bottom: 16rem;
+  @include responsive(tablet) {
+    padding-bottom: 12rem;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 6.4rem;
+    @include responsive(phone) {
+      margin-bottom: 4.8rem;
+      letter-spacing: -1.42857px;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    width: 100%;
+    @include responsive(tablet) {
+      max-width: 689px;
+      flex-direction: column;
+    }
+    @include responsive(phone) {
+      max-width: 311px;
+    }
+  }
+
+  &__info:not(:last-child) {
+    margin-bottom: 6.4rem;
+    @include responsive(phone) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__info-title {
+    margin-right: 3rem;
+    @include responsive(tablet) {
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    max-width: 730px;
+    width: 100%;
+    background-color: $show-color;
+    padding: 3.2rem 4rem;
+    @include responsive(tablet) {
+      padding: 3.2rem 3.2rem 3.2rem 4rem;
+    }
+    @include responsive(phone) {
+      padding: 3.2rem 2.8rem 3.2rem 3.2rem;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__item-title {
+    @include responsive(tablet) {
+      letter-spacing: -0.803571px;
+      font-size: 18px;
+      line-height: 1.33;
+    }
+  }
+
+  &__item-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}
