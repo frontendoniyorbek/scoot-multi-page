@@ -1,0 +1,75 @@
+.telemetry {
+  padding-bottom: 32.9rem;
+  @include responsive(tablet) {
+    padding-bottom: 10.4rem;
+  }
+  @include responsive(phone) {
+    padding-bottom: 12rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(tablet) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 16rem;
+  }
+
+  &__item:nth-child(even) {
+    flex-direction: row-reverse;
+
+    @include responsive(tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__info {
+    max-width: 445px;
+    width: 100%;
+    margin-right: 2rem;
+
+    @include responsive(tablet) {
+      max-width: 573px;
+      margin-top: 5.6rem;
+      text-align: center;
+      margin-right: 0;
+    }
+    @include responsive(phone) {
+      max-width: 311px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+    @include responsive(tablet) {
+      margin-bottom: 4rem;
+    }
+    @include responsive(phone) {
+      margin-bottom: 3.2rem;
+      font-size: 3.2rem;
+      letter-spacing: -1.42857px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+    @include responsive(phone) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__link {
+    padding: 1.4rem 4.4rem;
+  }
+
+  &__img-payments {
+    border-radius: 50%;
+  }
+}
