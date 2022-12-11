@@ -1,0 +1,88 @@
+.location {
+  padding-bottom: 12rem;
+  @include responsive(phone) {
+    padding-bottom: 7.2rem;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__newyork {
+    position: absolute;
+    top: 7.2rem;
+    left: 14.7rem;
+  }
+
+  &__newyork a {
+    padding: 2.2rem 3.9rem;
+  }
+
+  &__london {
+    position: absolute;
+    top: 1.8rem;
+    left: 39.3rem;
+  }
+
+  &__london a {
+    padding: 2.2rem 5.3rem;
+  }
+
+  &__yokohama {
+    position: absolute;
+    top: 7.8rem;
+    right: 6.4rem;
+  }
+  &__yokohama a {
+    padding: 2.2rem 3.9rem;
+  }
+
+  &__jakarta {
+    position: absolute;
+    bottom: 22rem;
+    right: 14.2rem;
+  }
+  &__jakarta a {
+    padding: 2.2rem 4.6rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    @include responsive(tablet) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-right: 3rem;
+    @include responsive(tablet) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+    @include responsive(phone) {
+      margin-bottom: 3.2rem;
+      letter-spacing: -1.42857px;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    width: 100%;
+    margin-right: 10.5rem;
+    @include responsive(tablet) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+      max-width: 573px;
+    }
+    @include responsive(phone) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__btn {
+    padding: 1.4rem 4.5rem;
+  }
+}
