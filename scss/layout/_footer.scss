@@ -1,0 +1,37 @@
+.site-footer {
+  background-image: url(../images/jpg/footer-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3.5rem;
+  padding-bottom: 3.2rem;
+
+  @include responsive(phone) {
+    padding-top: 6.4rem;
+    padding-bottom: 8.8rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @include responsive(m-tablet) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    @include responsive(m-tablet) {
+      margin-bottom: 4.2rem;
+    }
+  }
+}
+
+.social {
+  display: flex;
+}
+
+.social img:not(:last-child) {
+  margin-right: 2.4rem;
+}

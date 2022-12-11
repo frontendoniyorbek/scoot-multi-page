@@ -73,6 +73,23 @@
   }
 }
 
+.site-footer__list {
+  margin-right: auto;
+  @include responsive(m-tablet) {
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 8.5rem;
+  }
+
+  @include responsive(phone) {
+    align-items: center;
+  }
+}
+
+.site-footer__link {
+  color: $dim-grey;
+}
+
 .hidden {
   display: none;
 }
