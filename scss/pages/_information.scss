@@ -55,12 +55,14 @@
       max-width: 573px;
       width: 100%;
     }
-    @include responsive(phone) {
+    @include responsive(m-tablet) {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
+    }
+    @include responsive(phone) {
       max-width: 311px;
       width: 100%;
     }
