@@ -924,6 +924,73 @@ h4 {
   cursor: pointer;
 }
 
+.employee-information {
+  padding-bottom: 16rem;
+}
+@media screen and (max-width: 768px) {
+  .employee-information {
+    padding-bottom: 12rem;
+  }
+}
+.employee-information__list {
+  display: flex;
+  flex-direction: column;
+}
+.employee-information__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  width: 100%;
+  background-color: #f2f5f9;
+  padding: 3.2rem 6.4rem 3.5rem 4rem;
+}
+@media screen and (max-width: 768px) {
+  .employee-information__item {
+    padding: 3.4rem 4.8rem 3.3rem 4.8rem;
+    max-width: 689px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .employee-information__item {
+    text-align: center;
+    flex-direction: column;
+    padding: 3.6rem 3.2rem 3.2rem 3.2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .employee-information__item {
+    max-width: 311px;
+  }
+}
+.employee-information__item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.employee-information__title {
+  margin-bottom: 0.8rem;
+}
+@media screen and (max-width: 375px) {
+  .employee-information__title {
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
+    letter-spacing: -0.803571px;
+    line-height: 1.33;
+  }
+}
+@media screen and (max-width: 520px) {
+  .employee-information__text {
+    margin-bottom: 1.6rem;
+  }
+}
+.employee-information__btn {
+  padding: 1.4rem 6.7rem 1.4rem 6.8rem;
+}
+@media screen and (max-width: 375px) {
+  .employee-information__btn {
+    padding: 1.4rem 6rem 1.4rem 6.1rem;
+  }
+}
+
 .btn {
   color: #fff;
   background-color: #fcb72b;

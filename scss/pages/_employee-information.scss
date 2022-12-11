@@ -1,0 +1,60 @@
+.employee-information {
+  padding-bottom: 16rem;
+  @include responsive(tablet) {
+    padding-bottom: 12rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    background-color: $show-color;
+    padding: 3.2rem 6.4rem 3.5rem 4rem;
+    @include responsive(tablet) {
+      padding: 3.4rem 4.8rem 3.3rem 4.8rem;
+      max-width: 689px;
+    }
+    @include responsive(m-phone) {
+      text-align: center;
+      flex-direction: column;
+      padding: 3.6rem 3.2rem 3.2rem 3.2rem;
+    }
+    @include responsive(phone) {
+      max-width: 311px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+    @include responsive(phone) {
+      margin-bottom: 0.4rem;
+      font-size: 1.8rem;
+      letter-spacing: -0.803571px;
+      line-height: 1.33;
+    }
+  }
+
+  &__text {
+    @include responsive(m-phone) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__btn {
+    padding: 1.4rem 6.7rem 1.4rem 6.8rem;
+    @include responsive(phone) {
+      padding: 1.4rem 6rem 1.4rem 6.1rem;
+    }
+  }
+}
