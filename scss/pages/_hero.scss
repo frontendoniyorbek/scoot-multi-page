@@ -20,6 +20,40 @@
     background-position: center center;
   }
 
+  &__wrapperr {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/jpg/hero-about.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+  }
+
+  &__inner {
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+
+    @include responsive(phone) {
+      text-align: center;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__inner-title {
+    @include responsive(phone) {
+      font-size: 4rem;
+      letter-spacing: -1.78571px;
+    }
+  }
+
+  &__inner-title {
+    color: $white-color;
+  }
   &__img {
     position: absolute;
     top: 35.3rem;
