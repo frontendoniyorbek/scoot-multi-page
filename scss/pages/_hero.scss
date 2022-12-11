@@ -2,11 +2,11 @@
   padding-bottom: 16rem;
 
   @include responsive(tablet) {
-    margin-bottom: 12.2rem;
+    padding-bottom: 12.2rem;
   }
 
   @include responsive(phone) {
-    margin-bottom: 12rem;
+    padding-bottom: 12rem;
   }
 
   &__wrapper {
