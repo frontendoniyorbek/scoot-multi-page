@@ -1,13 +1,11 @@
 .site-header {
   padding: 2.2rem 0;
-  @include responsive(phone) {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: $white-color;
-    z-index: 10;
-  }
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: $white-color;
+  z-index: 10;
 
   &__container {
     display: flex;
