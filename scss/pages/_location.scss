@@ -4,46 +4,54 @@
     padding-bottom: 7.2rem;
   }
 
-  &__wrapper {
-    position: relative;
+  &__img1 {
+    margin-bottom: 12rem;
+    @include responsive(tablet) {
+      margin-bottom: 6.4rem;
+    }
+    @include responsive(phone) {
+      display: none;
+    }
   }
 
-  &__newyork {
-    position: absolute;
-    top: 7.2rem;
-    left: 14.7rem;
+  &__img2 {
+    display: none;
+    @include responsive(phone) {
+      display: block;
+      margin-bottom: 4rem;
+    }
   }
 
-  &__newyork a {
-    padding: 2.2rem 3.9rem;
+  &__list {
+    display: none;
+    @include responsive(phone) {
+      display: block;
+      margin-bottom: 7.2rem;
+    }
   }
 
-  &__london {
-    position: absolute;
-    top: 1.8rem;
-    left: 39.3rem;
+  &__item {
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  &__london a {
-    padding: 2.2rem 5.3rem;
+  &__item:not(:last-child) {
+    @include responsive(phone) {
+      margin-bottom: 1.6rem;
+    }
   }
 
-  &__yokohama {
-    position: absolute;
-    top: 7.8rem;
-    right: 6.4rem;
-  }
-  &__yokohama a {
-    padding: 2.2rem 3.9rem;
-  }
-
-  &__jakarta {
-    position: absolute;
-    bottom: 22rem;
-    right: 14.2rem;
-  }
-  &__jakarta a {
-    padding: 2.2rem 4.6rem;
+  &__item-btn {
+    @include responsive(phone) {
+      padding: 2.2rem 10rem;
+      background-color: rgba(252, 183, 43, 0.15);
+      color: $dark-navy;
+      font-size: 2.4rem;
+      letter-spacing: -1.07143px;
+      line-height: 1.17;
+    }
   }
 
   &__info {

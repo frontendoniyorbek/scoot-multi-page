@@ -991,6 +991,25 @@ h4 {
   }
 }
 
+.btn {
+  color: #fff;
+  background-color: #fcb72b;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Space Mono", serif;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 3px solid #fcb72b;
+  color: #fcb72b;
+}
+.btn:active {
+  opacity: 0.6;
+}
+
 .location {
   padding-bottom: 12rem;
 }
@@ -999,40 +1018,57 @@ h4 {
     padding-bottom: 7.2rem;
   }
 }
-.location__wrapper {
-  position: relative;
+.location__img1 {
+  margin-bottom: 12rem;
 }
-.location__newyork {
-  position: absolute;
-  top: 7.2rem;
-  left: 14.7rem;
+@media screen and (max-width: 768px) {
+  .location__img1 {
+    margin-bottom: 6.4rem;
+  }
 }
-.location__newyork a {
-  padding: 2.2rem 3.9rem;
+@media screen and (max-width: 375px) {
+  .location__img1 {
+    display: none;
+  }
 }
-.location__london {
-  position: absolute;
-  top: 1.8rem;
-  left: 39.3rem;
+.location__img2 {
+  display: none;
 }
-.location__london a {
-  padding: 2.2rem 5.3rem;
+@media screen and (max-width: 375px) {
+  .location__img2 {
+    display: block;
+    margin-bottom: 4rem;
+  }
 }
-.location__yokohama {
-  position: absolute;
-  top: 7.8rem;
-  right: 6.4rem;
+.location__list {
+  display: none;
 }
-.location__yokohama a {
-  padding: 2.2rem 3.9rem;
+@media screen and (max-width: 375px) {
+  .location__list {
+    display: block;
+    margin-bottom: 7.2rem;
+  }
 }
-.location__jakarta {
-  position: absolute;
-  bottom: 22rem;
-  right: 14.2rem;
+@media screen and (max-width: 375px) {
+  .location__item {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.location__jakarta a {
-  padding: 2.2rem 4.6rem;
+@media screen and (max-width: 375px) {
+  .location__item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .location__item-btn {
+    padding: 2.2rem 10rem;
+    background-color: rgba(252, 183, 43, 0.15);
+    color: #495567;
+    font-size: 2.4rem;
+    letter-spacing: -1.07143px;
+    line-height: 1.17;
+  }
 }
 .location__info {
   display: flex;
@@ -1079,23 +1115,4 @@ h4 {
 }
 .location__btn {
   padding: 1.4rem 4.5rem;
-}
-
-.btn {
-  color: #fff;
-  background-color: #fcb72b;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Space Mono", serif;
-  transition: all 0.3s ease;
-  border: 3px solid transparent;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: transparent;
-  border: 3px solid #fcb72b;
-  color: #fcb72b;
-}
-.btn:active {
-  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
