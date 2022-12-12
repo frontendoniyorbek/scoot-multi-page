@@ -373,21 +373,21 @@ h4 {
 }
 .hero__img--two {
   position: absolute;
-  top: 35.5rem;
-  right: 28.9rem;
+  bottom: 11.1rem;
+  right: 25rem;
 }
 @media screen and (max-width: 768px) {
   .hero__img--two {
     left: 0;
-    right: 44.9rem;
-    top: 47.3rem;
+    left: -12.7rem;
+    bottom: 3.9rem;
   }
 }
 @media screen and (max-width: 375px) {
   .hero__img--two {
     left: 0;
-    right: 33.5rem;
-    top: 47.8rem;
+    left: -31.1rem;
+    bottom: 3.4rem;
   }
 }
 .hero__info {
