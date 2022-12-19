@@ -271,6 +271,7 @@ h4 {
     padding: 6.4rem 3.2rem 0 3.2rem;
     color: #e5ecf4;
     opacity: 1;
+    display: none;
   }
 }
 .sitenav__list {
@@ -344,7 +345,7 @@ h4 {
 }
 
 .hidden {
-  display: none;
+  display: block;
 }
 
 .hero {

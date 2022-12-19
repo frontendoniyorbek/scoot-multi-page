@@ -19,6 +19,7 @@
     padding: 6.4rem 3.2rem 0 3.2rem;
     color: $light-grey;
     opacity: 1;
+    display: none;
   }
 
   &__list {
@@ -91,5 +92,5 @@
 }
 
 .hidden {
-  display: none;
+  display: block;
 }
